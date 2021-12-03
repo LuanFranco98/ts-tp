@@ -20,4 +20,10 @@ jobs:
         cache: pip
         architecture: x64
         cache-dependency-path: '${{ github.workspace }}/requirements.txt'
+
     
+      
+    - run: | 
+        echo "Rodando testes"
+        cd ${{github.workspace}}/tests
+        python -m unittest
