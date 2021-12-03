@@ -25,5 +25,7 @@ jobs:
       
     - run: | 
         echo "Rodando testes"
+        cd ${{github.workspace}}
+        pip install -r requirements.txt
         cd ${{github.workspace}}/tests
         python -m unittest
