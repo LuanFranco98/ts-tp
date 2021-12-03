@@ -10,7 +10,8 @@ from flaskblog.models import Post, User
 class Test(unittest.TestCase):
 
     def setUp(self):
-      self.driver = webdriver.Chrome(os.path.join('../venv/' ,'chromedriver'))
+      # self.driver = webdriver.Chrome(os.path.join('../venv/' ,'chromedriver'))
+      self.driver = webdriver.Chrome()
       self.base_url = "http://127.0.0.1:5000/"
       
 
